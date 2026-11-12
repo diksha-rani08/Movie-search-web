@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #090909, #171329, #090909);
+    color: white;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+header {
+    text-align: center;
+    margin: 30px auto 40px;
+}
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    border-bottom: 3px solid #b9f34a;
+    display: inline-block;
+    padding-bottom: 12px;
+    text-shadow: 0 0 15px rgba(185, 243, 74, 0.3);
+}
+header p {
+    color: #bdb9ca;
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+#forminput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+#inputtxt {
+    width: 80%;
+    padding: 15px 20px;
+    border: 2px solid #39334e;
+    border-radius: 30px;
+    background-color: #211d30;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+#inputtxt::placeholder {
+    color: #aaa5b9;
+}
+#inputtxt:focus {
+    border-color: #b9f34a;
+    box-shadow: 0 0 15px rgba(185, 243, 74, 0.3);
+}
+#btn {
+    padding: 15px 28px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #d4ff70, #a4e52d);
+    color: #171717;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn:hover {
+    background: linear-gradient(135deg, #e5ff9b, #b9f34a);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(185, 243, 74, 0.3);
+}
+#btn:active {
+    transform: scale(0.96);
+}
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    color: #c7c2d3;
+    font-size: 16px;
+}
+.moviecard {
+    width: 220px;
+    padding: 12px;
+    border-radius: 14px;
+    text-align: center;
+    background: linear-gradient(145deg, #262137, #151321);
+    border: 1px solid #39334e;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.moviecard:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: #b9f34a;
+    box-shadow: 0 10px 30px rgba(185, 243, 74, 0.15);
+}
+.moviecard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 9px;
+    transition: transform 0.4s ease;
+}
+.moviecard:hover img {
+    transform: scale(1.04);
+}
+.moviecard h2,
+.moviecard h3 {
+    color: #d4ff70;
+    font-size: 17px;
+    margin: 12px 0 8px;
+}
+.moviecard p {
+    color: #c5c1d0;
+    font-size: 13px;
+    margin: 6px 0;
+    line-height: 1.6;
+}
